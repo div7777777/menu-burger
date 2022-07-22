@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>menu burger</title>
+</head>
+<body class="body">
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background: darkblue;
+}
+ /* menu berger */
+.accueil{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(90deg, pink, skyblue);
+ border-radius: 50%;
+ border: 5px solid whitesmoke;
+ padding: 15px;
+ margin: 20px;
+ height: 40px;
+ width: 40px;
+}
+.burger{
+color: whitesmoke;}
+.menu a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 25px;
+     padding-top: 25px; 
+     text-decoration: none;
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+   
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid whitesmoke;
+    height: 30px;
+    width: 65px;
+    border-radius: 50px 0 0 50px;
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 3px solid whitesmoke;
+    border-radius: 0 50px 50px 0;
+    height: 30px;
+    width: 160px;
+    font-size: 25px;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, pink, skyblue);
+    border-radius: 0 50px ;
+    border: 1px solid black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+ .sidenav .closebtn{
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+
+ @media screen and (max-heigth: 450px){
+     .sidenav{padding-top: 15px;;}
+     .sidenav a {font-size: 18px;}
+ }
+ .profil{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 110px;
+ }
+ .prof{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     border: 7px solid whitesmoke;
+     height: 100px;
+     width: 100px;
+ }
+ .ligne{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 10px;
+     width: auto;
+     background: linear-gradient(90deg, crimson, orange, white,yellow);
+ }
+ .title{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+ }
+ .h1{
+     color: black;
+     font-size: 30px;
+ }
+ .social{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .link{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+ }
+</style>
+     <!-- menu burger-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+    <!-- photo de profil -->
+    <div class="profil">
+      <div><img class="prof" src="1.png" alt=""></div></div>
+      <!-- title -->
+      <div class="title"><h1 class="h1">Menu Burger</h1></div>
+      <!-- barre en couleur -->
+    <div class="ligne"></div>
+    <!-- contenu mecu -->
+    <div class="menu">
+            <div class="items">
+                <div class="item"><img class="img" src="https://img.icons8.com/glyph-neue/60/000000/dog-house.png"/><h2 class="h2"> Home</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/ios-filled/23/000000/service.png"/><h2 class="h2"> Service</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/material/24/000000/client-management.png"/><h2 class="h2"> Clients</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/ios-glyphs/30/000000/whatsapp.png"/><h2 class="h2"> Contacte</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/ios-filled/50/000000/apple-mail.png"/><h2 class="h2"> mail</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/glyph-neue/64/000000/google-maps.png"/><h2 class="h2"> adresse</h2></div>
+                <div class="item"><img class="img" src="https://img.icons8.com/wired/64/000000/box-important.png"/><h2 class="h2"> À propos</h2></div>
+            </div>
+            <!-- link social -->
+            <div class="social">
+                <div class="link">
+                <div class="rsx"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/></div>
+                <div class="rsx"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"/></div>
+                <div class="rsx"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/></div>
+                <div class="rsx"><img src="https://img.icons8.com/ios-glyphs/55/000000/linkedin.png"/></div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- accueil  burger-->
+<div class="accueil"> <span class="burger" style="font-size: 40px; cursor: pointer"; 
+    onclick = "openNav()">  &#9776;</span></div>
+    <script>
+        // menu burgeur
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+    </script>
+
+
+    <!-- JavaScripte -->
+    <script src='code.js'></script>
+</body>
+</html>
